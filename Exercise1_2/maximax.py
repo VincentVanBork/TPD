@@ -7,7 +7,7 @@ def maximax_calc(choices: np.ndarray) -> Any:
     max_values = np.amax(choices, axis=1)
     max_indices = np.argmax(choices, axis=1)
     value_column = np.array(list(zip(max_values, max_indices)))
-    print(value_column)
+    # print(value_column)
     max_index_from_max = np.argmax(value_column[:, 0])
     return max_index_from_max, np.amax(value_column[:, 0]), value_column[max_index_from_max, 1]
 

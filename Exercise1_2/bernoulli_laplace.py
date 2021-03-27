@@ -16,8 +16,8 @@ def bernoulli_calc(choices: np.ndarray = choices_matrix,
         sum_of_types = choices.sum(axis=1)
         variants = (1 / num_cols) * sum_of_types
         # print("sum", variants)
-    print("BEST VARIANT", np.argmax(variants) + 1,
-          "WITH VALUE", np.amax(variants))
+    # print("BEST VARIANT", np.argmax(variants) + 1,
+    #       "WITH VALUE", np.amax(variants))
     return np.argmax(variants), np.amax(variants)
 
 
